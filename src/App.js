@@ -1,23 +1,12 @@
-import logo from './logo.svg';
+import Testimonials from './components/Testimonials';
 import './App.css';
+import reviews from './data';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex justify-center items-center mt-[3rem]">
+          
+          <Testimonials reviews={ reviews }/>
     </div>
   );
 }
